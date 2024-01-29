@@ -7,7 +7,7 @@
   max-width: 93.5%;
 }
 section.wrapper {
-  padding: 44px 52px;
+  padding: 38px 42px 0 35px;
 }
 img.logo {
   width: 160px;
@@ -20,20 +20,30 @@ img.logo {
 }
 .hero__header-button {
   /* background: var(--verypalecyan); */
-  padding: 14px 56px;
+  /* padding: 14px 56px; */
+  background-color: white;
+  width: 200px;
+  height: 48px;
+  text-align: center;
   border-radius: 35px;
   box-shadow: 0px 2px rgba(125,133,140,0.22);
+  margin: -9px 0 0 0;
 }
-button .btn {
+p.btn {
+  /* text-align: center; */
+  padding-top: 14px;
   color: var(--verydarkycyan);
-  font-family: var(--poppinsfont);
-  font-size: 12px;
-  font-weight: 600;
+  font-family: var(--opensansfont);
+  font-size: 14px;
+  font-weight: 700;
   border: none;
   background-color: transparent;
 }
+button .btn {
+}
 .hero {
   background: url(/images/bg-hero-desktop.svg);
+  background-color: var()
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
