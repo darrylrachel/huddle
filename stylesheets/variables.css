@@ -1,0 +1,13 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --verypalecyan: hsl(193, 100%, 96%);
+  --verydarkycyan: hsl(192, 100%, 9%);
+  --grayishblue: hsl(208, 11%, 55%);
+  --fontnormal: 18px;
+  --poppinsfont: "Poppins", sans-serif;
+  --opensansfont: "Open Sans", sans-serif;;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght600&display=swap');

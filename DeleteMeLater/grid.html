@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+  .grid-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Allow click-through to elements beneath the overlay */
+      background: repeating-linear-gradient(
+        0deg,                                /* Horizontal lines */
+        transparent,
+        transparent 50px,
+        #b7b7a4 50px,
+        #b7b7a4 51px
+      ),
+      repeating-linear-gradient(
+        90deg,                               /* Vertical lines */
+        transparent,
+        transparent 50px,
+        #b7b7a4 50px,
+        #b7b7a4 51px
+      );
+
+  }
+
+  .content {
+      position: relative;
+      z-index: 1; /* Ensure content is above the grid */
+  }
+
+</style>
+<body>
+    <div class="grid-overlay" id="gridOverlay"></div>
+
+    <!-- Your content goes here -->
+    <div class="content">
+        <!-- Your elements go here -->
+        <!-- <div class="element">Element 1</div>
+        <div class="element">Element 2</div> -->
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add this if you want to toggle the grid on/off using a key press
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "g") {
+                toggleGrid();
+            }
+        });
+
+        function toggleGrid() {
+            var gridOverlay = document.getElementById("gridOverlay");
+            gridOverlay.style.display = gridOverlay.style.display === "none" ? "block" : "none";
+        }
+    });
+
+
+
+    </script>
+</body>
+</html>
