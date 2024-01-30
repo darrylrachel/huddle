@@ -110,6 +110,13 @@ img.hero-col__img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  /* margin-top: 120px; */
+  padding: 60px 40px 0 40px;
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+}
+.body__row-card {
+  margin-top: 40px;
 }
 img.row-img {
   width: 440px;
