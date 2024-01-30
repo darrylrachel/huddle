@@ -9,10 +9,10 @@
 .container {
   border: 1px solid aqua;
   margin: 0 auto;
-  max-width: 93.5%;
+  max-width: 91.5%;
 }
 section.wrapper {
-  padding: 38px 42px 0 35px;
+    padding: 50px 38px 0 31px;
 }
 img.logo {
   width: 160px;
@@ -63,7 +63,7 @@ p.btn {
   width: 50%;
 }
 .hero-col-1 {
-  padding: 100px 149px 0 0;
+  padding: 95px 75px 0 0;
 }
 .hero-col-1 h1 {
   color: var(--verydarkycyan);
@@ -76,16 +76,22 @@ p.btn {
   font-family: var(--opensansfont);
   font-size: 16px;
   font-weight: 400;
-  padding-top: 19px;
+  padding-top: 26px;
   line-height: 1.2;
-
-  
-
+}
+.hero-col-1 button {
+  color: #ffffff;
+  border-radius: 50px;
+  height: 54px;
+  width: 256px;
+  background-color: var(--pink);
+  border: none;
+  margin-top: 20px;
 }
 .hero-col-2 {
   margin-top: -8px;
-  margin-right: -5px;
+  margin-right: 20px;
 }
 img.hero-col__img {
-  width: 664px;
+  width: 560px;
 }
