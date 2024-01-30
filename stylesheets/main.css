@@ -2,17 +2,17 @@
 @import "/stylesheets/variables.css";
 
 .hero__background {
-  /* background-color: #EDFBFF;  */
+  background-color: #EDFBFF; 
   width:  100%;
-  height: 100%;
+  height: 95%;
 }
 .container {
-  border: 1px solid aqua;
+  /* border: 1px solid aqua; */
   margin: 0 auto;
   max-width: 91.5%;
 }
 section.wrapper {
-    padding: 50px 38px 0 31px;
+  padding: 50px 38px 0 31px;
 }
 img.logo {
   width: 160px;
@@ -94,4 +94,23 @@ p.btn {
 }
 img.hero-col__img {
   width: 560px;
+}
+
+/* End hero section */
+.body {
+  margin-top: 78px;
+}
+.body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+img.row-img {
+  width: 440px;
 }
