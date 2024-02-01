@@ -7,7 +7,6 @@
   height: 95%;
 }
 .container {
-  /* border: 1px solid aqua; */
   margin: 0 auto;
   max-width: 91.5%;
 }
@@ -24,8 +23,6 @@ img.logo {
   align-items: flex-start;
 }
 .hero__header-button {
-  /* background: var(--verypalecyan); */
-  /* padding: 14px 56px; */
   background-color: white;
   width: 200px;
   height: 48px;
@@ -34,8 +31,7 @@ img.logo {
   box-shadow: 0px 2px rgba(125,133,140,0.22);
   margin: -9px 0 0 0;
 }
-p.btn {
-  /* text-align: center; */
+.header-btn {
   padding-top: 14px;
   color: var(--verydarkycyan);
   font-family: var(--opensansfont);
@@ -46,7 +42,6 @@ p.btn {
 }
 .hero {
   background: url(/images/bg-hero-desktop.svg);
-  /* background-color: #EDFBFF; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -110,14 +105,165 @@ img.hero-col__img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* margin-top: 120px; */
   padding: 60px 40px 0 40px;
-  border: 2px solid #ebebeb;
+  border: 2px solid #f8f8f8;
   border-radius: 8px;
+  height: 375px;
+  -webkit-box-shadow: 0px 2px 8px -1px rgba(248, 248, 248, 1);
+  -moz-box-shadow: 0px 2px 8px -1px rgba(248, 248, 248, 1);
+  box-shadow: 0px 2px 8px -1px rgba(248, 248, 248, 1);
 }
 .body__row-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 40px;
 }
+.body__row.body__row-card.reverse {
+  flex-direction: row-reverse;
+}
+.body__row-text {
+  width: 50%;
+}
+.body__row-img {
+  padding: 20px 0 50px 0px;
+}
+.text-title {
+  font-size: 28px;
+  font-family: var(--poppinsfont);
+  font-weight: 600;
+  color: var(--verydarkycyan)
+}
+.text-body {
+  font-size: 18px;
+  font-family: var(--opensansfont);
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--grayishblue);
+  padding-top: 15px;
+  padding-right: 50px;
+}
 img.row-img {
-  width: 440px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  padding-left: 78px;
+}
+img.row-img.row-img-reverse {
+  padding-left: 0px;
+  width: 417px;
+}
+img.row-img.grow {
+  width: 406px;
+  margin-right: 25px;
+}
+img.row-img.flow {
+  width: 380px;
+}
+img.row-img.user {
+  width: 406px;
+}
+.cta {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 300px;
+}
+.cta .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cta__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 280px;
+  border: 2px solid #f8f8f8;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px -4px 1px -3px rgba(248, 248, 248, 1);
+  -moz-box-shadow: 0px -4px 1px -3px rgba(248, 248, 248, 1);
+  box-shadow: 0px -4px 1px -3px rgba(248, 248, 248, 1);
+  position: absolute;
+  background-color: #fff;
+}
+.wrapper-text {
+  font-family: var(--poppinsfont);
+  color: var(--verydarkycyan);
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.wrapper-button button {
+  background-color: var(--pink);
+  box-shadow: 0px 2px rgba(125, 133, 140, 0.22);
+}
+.footer {
+  background-color: var(--verydarkycyan);
+  color: #fff;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+.footer-logo {
+  width: 150px;
+}
+.wrapper-col {
+  font-family: var(--opensansfont);
+  font-weight: 300;
+  text-align: justify;
+  width: 50%;
+}
+.col-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.col-address,
+.col-phone,
+.col-email, .links,
+.footer__copyright .smal {
+  line-height: 1.7;
+  font-size: 13px;
+}
+.links {
+  padding: 20px 0 0 0;
+}
+.col-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icons {
+  width: 32px;
+  height: 32px;
+}
+.wrapper-col--social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__copyright .small {
+  padding-top: 100px;
+}
+
+/* Hover & Animation */
+.button:hover {
+  background-color: #FF9ADB;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.header-btn:hover {
+  color: #808E9A;
+  transition: all 300ms ease-in-out;
 }

@@ -19,6 +19,23 @@ h1, h2, h3,
 h4 {
   font-family: var(--poppinsfont);
 }
-.spacer {
+.spacer-120 {
   height: 120px;
+}
+.space {
+  padding: 10px;
+}
+.button {
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 54px;
+  width: 256px;
+  border: none;
+  font-family: var(--opensansfont);
+}
+
+/* REMOVE */
+.b {
+  border: 1px solid magenta;
 }

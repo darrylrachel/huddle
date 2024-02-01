@@ -6,24 +6,14 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+  <title>Huddle</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/6115d7769f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/stylesheets/main.css">
 
-  <!-- REMOVE  👍 -->
-  <style>
-    
-    body{position: relative; height: 100vh;}
-    iframe {z-index: -2; position: absolute; height: 100vh;}
-
-
-  </style>
+  
 </head>
 <body>
-  <!-- DELETE BEFORE PRODUCTION -->
-  <!-- <iframe src="/DeleteMeLater/grid.html" width="100%" frameborder="0"></iframe> -->
-  <!-- This file is only used for layout assistance -->
-
   <div class="hero__background">
     <div class="container">
       <section class="wrapper">
@@ -33,7 +23,7 @@
               <img src="/images/logo.svg" alt="" class="logo">
             </div>
             <div class="hero__header-button">
-              <p type="button" class="btn">Try It Free</p>
+              <button type="button" class="btn header-btn">Try It Free</button>
             </div>
           </div>
           <div class="hero__hero">
@@ -41,110 +31,111 @@
               <h1>Build The Community Your Fans Will Love</h1>
               <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
                 Create connections with your users as you engage in genuine discussion.</p>
-              <button>Get Started For Free</button>
+              <button class="button">Get Started For Free</button>
             </div>
             <div class="hero-col-2">
               <img src="/images/illustration-mockups.svg" alt="Desktop hero image" class="hero-col__img">
             </div>
           </div>
         </div>
+    </div>
   </div>
-
-      <div class="body">
-        <div class="container">
-          <div class="spacer"></div>
-          <div class="body__row">
-            <div class="body__row-text">
-              <div class="text-title">
-                <p>Grow Together</p>
-              </div>
-              <div class="text-body">
-                <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
-                  Think of the insightful conversations you miss out on with a feedback form.</p>
-              </div>
-            </div>
-            <div class="body__row-img">
-              <img src="/images/illustration-grow-together.svg" alt="" class="row-img">
-            </div>
-          </div>
-          <div class="body__row body__row-card">
-            <div class="body__row-text">
-              <div class="text-title">Flowing Conversations</div>
-              <div class="text-body">
-                <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-                  have just-in-time loading for a more natural flow.</p>
-              </div>
-            </div>
-            <div class="body__row-img">
-              <img src="/images/illustration-flowing-conversation.svg" alt="" class="row-img">
-            </div>
-          </div>
-          <div class="body__row body__row-card">
-            <div class="body__row-text">
-              <div class="text-title">
-                <p>Your Users</p>
-              </div>
-              <div class="text-body">It takes no time at all to integrate Huddle with your app's authentication solution. 
-                This means, once signed in to your app, your users can start chatting immediately.</div>
-            </div>
-            <div class="body__row-img">
-              <img src="/images/illustration-your-users.svg" alt="" class="row-img">
-            </div>
-          </div>
-      </div>
-
-        
-      </div>
-
-     <div class="cta">
-        <div class="cta__wrapper">
-          <div class="wrapper-text">
-            <p>Ready To Build Your Community?</p>
-          </div>
-          <div class="wrapper-button">
-            <button>Get Started For Free</button>
-          </div>
+  <div class="body">
+    <div class="container">
+      <div class="spacer120"></div>
+      <div class="body__row">
+        <div class="body__row-text">
+          <div class="text-title">Grow Together</div>
+          <div class="text-body">Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form.</div>
+        </div>
+        <div class="body__row-img">
+          <img src="/images/illustration-grow-together.svg" alt="" class="row-img grow">
         </div>
       </div>
 
-      <div class="footer">
-        <div class="footer__wrapper">
-          <div class="wrapper-col">
-            <div class="col-logo">
-              <img src="/images/logo.svg" alt="">
-            </div>
-            <p class="col-address">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua</p>
-            <p class="col-phone">+1-543-123-4567</p>
-            <p class="col-email">example@huddle.com</p>
+      <div class="body__row body__row-card reverse">
+        <div class="body__row-text text-reverse">
+          <div class="text-title">Flowing Conversations</div>
+          <div class="text-body body-reverse">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</div>
+        </div>
+
+        <div class="body__row-img img-reverse">
+          <img src="/images/illustration-flowing-conversation.svg" alt="" class="row-img flow row-img-reverse">
+        </div>
+      </div>
+
+      <div class="body__row body__row-card space">
+        <div class="body__row-text">
+          <div class="text-title">Your Users</div>
+          <div class="text-body">It takes no time at all to integrate Huddle with your app's authentication solution. 
+            This means, once signed in to your app, your users can start chatting immediately.</div>
+        </div>
+        <div class="body__row-img">
+          <img src="/images/illustration-your-users.svg" alt="" class="row-img user">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cta">
+    <div class="container">
+      <div class="cta__wrapper">
+        <div class="wrapper-text">
+          <p>Ready To Build Your Community?</p>
+        </div>
+        <div class="wrapper-button">
+          <button type="button" class="button">Get Started For Free</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+
+        <div class="wrapper-col">
+          <div class="col-logo space">
+            <img src="/images/white-logo.png" alt="" class="footer-logo">
           </div>
-          <div class="wrapper-col">
-            <div class="col-contact">
-              <p class="links">About Us</p>
-              <p class="links">What We Do</p>
-              <p class="links">FAQs</p>
-            </div>
+          <p class="col-address space">123 Happy Huddle Way<br />
+          Happy Land, CA 90000</p>
+          <p class="col-phone space">+1-543-123-4567</p>
+          <p class="col-email space">contact@huddle.com</p>
+        </div>
+
+        <div class="wrapper-col">
+          <div class="col-contact">
+            <p class="links">About Us</p>
+            <p class="links">What We Do</p>
+            <p class="links">FAQs</p>
           </div>
-          <div class="wrapper-col">
-            <div class="col-contact">
-              <p class="links">Careers</p>
-              <p class="links">Blog</p>
-              <p class="links">Contact Us</p>
-            </div>
+        </div>
+        <div class="wrapper-col">
+          <div class="col-contact">
+            <p class="links">Careers</p>
+            <p class="links">Blog</p>
+            <p class="links">Contact Us</p>
           </div>
-          <div class="wrapper-col">
-            <div class="col-social">
-              <div class="social__icons">Facebook</div>
-              <div class="social__icons">Twitter</div>
-              <div class="social__icons">Instagram</div>
+        </div>
+        <div class="wrapper-col wrapper-col--social">
+          <div class="col-social">
+            <div class="social__icons">
+              <img src="/images/facebook.svg" alt="" class="icons">
+            </div>
+            <div class="social__icons">
+              <img src="/images/twitter.svg" alt="" class="icons">
+            </div>
+            <div class="social__icons">
+              <img src="/images/instagram.svg" alt="" class="icons">
             </div>
           </div>
           <div class="footer__copyright">
             <p class="small">&copy; Copyright 2018 Huddle. All rights reserved.</p>
           </div>
-        </div> 
+        </div>
+        
       </div>
-    </section>
+    </div> 
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
